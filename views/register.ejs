@@ -1,0 +1,33 @@
+<%- include('partials/header'); -%>
+
+<!-- this mid class is used to have all the content part of website -->
+
+<div class="signin-mid">
+  <div class="alert alert-dark" role="alert" <%= checker %>>
+    Hi, Please check your Email id.
+  </div>
+  <form class="signinForm col-lg-3" action="/register" method="Post">
+    <h2>Register</h2>
+    <div class="mb-3">
+      <label for="InputEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="InputEmail" placeholder="Your Email Address" name="username" required>
+    </div>
+    <div class="mb-3">
+      <label for="InputPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="InputPassword" name="password" required>
+    </div>
+    <div class="mb-3">
+      <label for="InputName" class="form-label">Enter your Name</label>
+      <input type="text" class="form-control" id="InputEmail" placeholder="Your Name" name="userName">
+    </div>
+    <div class="mb-3">
+      <label for="InputName" class="form-label">Tell Us something about You</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="About You" name="details"></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-dark">Submit</button>
+  </form>
+</div>
+
+<!-- this bottom is used to place all the trailing info about the site with contact and few links etc. -->
+
+<%- include('partials/footer'); -%>
